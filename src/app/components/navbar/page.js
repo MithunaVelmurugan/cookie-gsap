@@ -10,7 +10,7 @@ const NavBar = () => {
                 <li className='text-[35px] font-medium'>Location</li>
                 <li className='text-[35px] font-medium'>Catering</li>
             </ul>
-            <button className='border text-[30px] border-[#552c10] font-medium rounded-full px-6'>Buy now</button>
+            <button className='border hover:bg-[#552c10] transform duration-500 hover:scale-105 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#fff8dccc] cursor-pointer text-[30px] border-[#552c10] font-medium rounded-full px-6'>Buy now</button>
         </nav>
     )
 }

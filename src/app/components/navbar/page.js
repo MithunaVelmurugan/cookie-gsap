@@ -71,7 +71,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className='fixed top-0 left-0 right-0 z-50 flex justify-between px-6 sm:p-8 items-center backdrop-blur-sm'>
+            <nav className='fixed top-0 left-0 right-0 z-50 flex justify-between px-6 py-0 sm:p-8 items-center backdrop-blur-sm'>
                 <h1 className='text-[clamp(2.75rem,4vw,3.75rem)] font-extrabold tracking-tight'>Cookie.co</h1>
 
                 <ul className='hidden md:flex justify-between gap-8 items-center'>

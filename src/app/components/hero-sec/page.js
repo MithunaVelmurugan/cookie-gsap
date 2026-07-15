@@ -63,7 +63,7 @@ const HeroSec = () => {
       left: '40%',
       top: '247%'
     })
-  }, [])
+  }, []) 
 
   return (
     <main>
@@ -85,16 +85,16 @@ const HeroSec = () => {
         <div className='w-[25%] h-[300px] bg-[#552c10] flex flex-col justify-center items-center relative rounded-4xl p-4'>
           <Image width={250} height={250} src={'/frosted-sugar.webp'} className='h-auto object-cover absolute top-[-55%] drop-shadow-2xl z-10 -rotate-45' alt='cook' />
           <h1 className='text-[5vw] text-[#fff8dc] font-extrabold'>Frosted Sugar</h1>
-          <button className='text-[2vw] border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 cursor-pointer'>Buy now</button>
+          <button className='text-[2vw] border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 cursor-pointer hover:bg-[#fff8dc] transition duration-300 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#552c10]'>Buy now</button>
         </div>
         <div className='w-[25%] h-[300px] bg-[#552c10] flex flex-col justify-center items-center relative rounded-4xl p-4'>
           <h1 className='text-[5vw] text-[#fff8dc] font-extrabold'>Monster</h1>
-          <button className='text-[2vw] border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 cursor-pointer'>Buy now</button>
+          <button className='text-[2vw] border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 cursor-pointer hover:bg-[#fff8dc] transition duration-300 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#552c10]'>Buy now</button>
         </div>
         <div className='w-[25%] h-[300px] bg-[#552c10] flex flex-col justify-center items-center relative rounded-4xl p-4'>
           <Image width={250} height={250} src={'/oreo.webp'} className='h-auto object-cover absolute top-[-55%] drop-shadow-2xl z-10 -rotate-45' alt='cook' />
           <h1 className='text-[5vw] text-[#fff8dc] font-extrabold'>Oreo</h1>
-          <button className='text-[2vw] border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 cursor-pointer'>Buy now</button>
+          <button className='text-[2vw] border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 cursor-pointer hover:bg-[#fff8dc] transition duration-300 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#552c10]'>Buy now</button>
         </div>
       </div>
     </main>

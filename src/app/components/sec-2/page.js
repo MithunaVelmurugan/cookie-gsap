@@ -40,7 +40,7 @@ const Sec2 = () => {
     }, [])
 
     return (
-        <div id='story' ref={sectionRef} className='min-h-screen p-6 sm:p-10 flex flex-col sm:flex-row justify-between items-center bg-[#b97648d4] gap-8 sm:gap-0'>
+        <div id='story' ref={sectionRef} className='py-20 sm:py-5 sm:min-h-screen px-6 sm:p-10 flex flex-col sm:flex-row sm:justify-between items-center bg-[#b97648d4] gap-8 sm:gap-0'>
             <div className='w-[35%] hidden sm:block'></div>
             <div className='w-full sm:w-[60%] max-w-2xl'>
                 <p ref={eyebrowRef} className='font-[var(--font-italianno)] text-[clamp(2rem,4vw,3rem)] text-[#552c10] leading-none mb-1'>
@@ -52,7 +52,7 @@ const Sec2 = () => {
                 <h6 className='text-[clamp(1.25rem,4vw,2rem)] font-normal mb-4 text-[#552c10]'>
                     Real eggs, real butter, real sugar.
                 </h6>
-                <p ref={bodyRef} className='text-[clamp(1rem,2vw,1.15rem)] leading-relaxed max-w-xl'>
+                <p ref={bodyRef} className='text-[25px] md:text-[30px] 2xl:text-[35px] leading-relaxed max-w-xl'>
                     Cookie Co. was founded in 2020 during the height of the Covid-19 pandemic by Elise and Matt Thomas. Working behind the scenes to open the first Cookie Co. location, Elise baked her signature cookie recipes using real eggs, real butter, and real cane sugar in her home, preparing hundreds of boxes weekly by hand for driveway pick-up.
                 </p>
             </div>

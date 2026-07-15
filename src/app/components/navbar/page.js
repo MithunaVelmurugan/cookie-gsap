@@ -72,7 +72,7 @@ const NavBar = () => {
     return (
         <>
             <nav className='fixed top-0 left-0 right-0 z-50 flex justify-between p-6 sm:p-8 items-center backdrop-blur-sm'>
-                <h1 className='text-[clamp(1.75rem,4vw,2.75rem)] font-extrabold tracking-tight'>Cookie.co</h1>
+                <h1 className='text-[clamp(2.75rem,4vw,3.75rem)] font-extrabold tracking-tight'>Cookie.co</h1>
 
                 <ul className='hidden md:flex justify-between gap-8 items-center'>
                     {navItems.map((item) => (
@@ -80,7 +80,7 @@ const NavBar = () => {
                             key={item}
                             data-nav-key={item}
                             onMouseEnter={navHover}
-                            className='text-[17px] tracking-wide cursor-pointer font-medium'
+                            className='text-[25px] md:text-[30px] 2xl:text-[35px] tracking-wide cursor-pointer font-medium'
                         >
                             {item}
                         </li>
@@ -88,11 +88,10 @@ const NavBar = () => {
                 </ul>
 
                 <div className='flex items-center gap-3'>
-                    <button className='hidden sm:block border hover:bg-[#552c10] transform duration-500 hover:scale-105 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#fff8dccc] cursor-pointer text-[16px] tracking-wide border-[#552c10] font-medium rounded-full px-6 py-2'>
+                    <button className='hidden md:block border hover:bg-[#552c10] transform duration-500 hover:scale-105 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#fff8dccc] cursor-pointer text-[20px] md:text-[25px] 2xl:text-[35px] tracking-wide border-[#552c10] font-medium rounded-full px-6 py-2'>
                         Buy now
                     </button>
 
-                    {/* hamburger — mobile only */}
                     <button
                         onClick={() => setMenuOpen(true)}
                         aria-label='Open menu'
@@ -105,14 +104,12 @@ const NavBar = () => {
                 </div>
             </nav>
 
-            {/* overlay */}
             <div
                 ref={overlayRef}
                 onClick={() => setMenuOpen(false)}
                 className='fixed inset-0 bg-black/40 z-40 invisible md:hidden'
             />
 
-            {/* drawer */}
             <div
                 ref={drawerRef}
                 className='fixed top-0 right-0 h-full w-[75%] max-w-xs bg-[#fff8dc] z-50 hidden flex-col p-8 pt-24 gap-6 md:hidden'

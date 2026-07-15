@@ -47,8 +47,8 @@ const Testimonials = () => {
                         ref={(el) => (cardsRef.current[i] = el)}
                         className='bg-white rounded-3xl p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg'
                     >
-                        <p className='text-[#552c10] leading-relaxed mb-6'>&ldquo;{t.quote}&rdquo;</p>
-                        <p className='font-extrabold text-[#552c10]'>{t.name}</p>
+                        <p className='text-[#552c10] text-[22px] md:text-[25px] 2xl:text-[30px] leading-relaxed mb-6'>&ldquo;{t.quote}&rdquo;</p>
+                        <p className='font-extrabold text-[22px] md:text-[25px] 2xl:text-[30px] text-[#552c10]'>{t.name}</p>
                     </div>
                 ))}
             </div>

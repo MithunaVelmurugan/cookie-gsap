@@ -42,7 +42,7 @@ const Sec3 = () => {
                 Pick your cookie.
             </h2>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-10 sm:gap-10 w-full max-w-6xl mt-[50px] md:mt-[100px] 2xl:mt-[200px] pt-10 sm:pt-0'>
                 {products.map((p, i) => (
                     <div
                         key={p.name}
@@ -54,12 +54,12 @@ const Sec3 = () => {
                                 width={250}
                                 height={250}
                                 src={p.img}
-                                className='w-[55%] sm:w-auto h-auto object-cover absolute top-[-50%] sm:top-[-55%] drop-shadow-2xl z-10 -rotate-45'
+                                className={'w-[20%] sm:w-[30%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] h-auto object-cover absolute md:left-[50%] md:translate-x-[-50%] top-[0%] md:top-[-8%] lg:top-[-10%] 2xl:top-[15%] -translate-y-1/2 drop-shadow-2xl z-10 -rotate-45 ' + (i === 0 ? 'left-0 sm:top-[20%]' : 'right-0 sm:top-[20%]')}
                                 alt={p.name}
                             />
                         )}
                         <h1 className='text-[clamp(1.75rem,5vw,2.5rem)] text-[#fff8dc] font-extrabold text-center'>{p.name}</h1>
-                        <button className='mt-3 text-[15px] tracking-wide border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 py-1.5 cursor-pointer hover:bg-[#fff8dc] transition duration-300 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#552c10]'>
+                        <button className='mt-3 text-[25px] md:text-[30px] 2xl:text-[35px] tracking-wide border border-[#fff8dc] text-[#fff8dc] rounded-full px-5 py-1.5 cursor-pointer hover:bg-[#fff8dc] transition duration-300 hover:drop-shadow-[0_8px_3px_rgba(0,0,0,0.29)] hover:text-[#552c10]'>
                             Buy now
                         </button>
                     </div>

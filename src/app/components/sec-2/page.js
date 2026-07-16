@@ -40,7 +40,7 @@ const Sec2 = () => {
     }, [])
 
     return (
-        <div id='story' ref={sectionRef} className='py-20 sm:py-5 sm:min-h-screen px-6 sm:p-10 flex flex-col sm:flex-row sm:justify-between items-center bg-[#b97648d4] gap-8 sm:gap-0'>
+        <div id='story' ref={sectionRef} className='py-20 h-[100vh] sm:py-5 sm:min-h-screen px-6 sm:p-10 flex flex-col sm:flex-row sm:justify-between items-center bg-[#b97648d4] gap-8 sm:gap-0'>
             <div className='w-[35%] hidden sm:block'></div>
             <div className='w-full sm:w-[60%] max-w-2xl'>
                 <p ref={eyebrowRef} className='font-[var(--font-italianno)] text-[clamp(2rem,4vw,3rem)] text-[#552c10] leading-none mb-1'>

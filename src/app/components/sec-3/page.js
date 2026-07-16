@@ -54,7 +54,7 @@ const Sec3 = () => {
                                 width={250}
                                 height={250}
                                 src={p.img}
-                                className={'w-[20%] sm:w-[30%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] h-auto object-cover absolute md:left-[50%] md:translate-x-[-50%] top-[0%] md:top-[-8%] lg:top-[-10%] 2xl:top-[15%] -translate-y-1/2 drop-shadow-2xl z-10 -rotate-45 ' + (i === 0 ? 'left-0 sm:top-[20%]' : 'right-0 sm:top-[20%]')}
+                                className={'w-[20%] sm:w-[30%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] h-auto object-cover absolute md:left-[50%] md:translate-x-[-50%] top-[0%] md:top-[-8%] lg:top-[-10%] 2xl:top-[-15%] -translate-y-1/2 drop-shadow-2xl z-10 -rotate-45 ' + (i === 0 ? 'left-0 sm:top-[20%]' : 'right-0 sm:top-[20%]')}
                                 alt={p.name}
                             />
                         )}

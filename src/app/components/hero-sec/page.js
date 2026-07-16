@@ -70,7 +70,7 @@ const HeroSec = () => {
         else if (isTabletOnly || isMobileLarge) {
           tl1.to(cookieRef.current, {
             rotate: 45,
-            top: '110vh',
+            top: '130vh',
             left: '-20%',
             scale: 1.3,
             ease: 'power3.inOut'
@@ -79,8 +79,8 @@ const HeroSec = () => {
         else if (isDesktop) {
           tl1.to(cookieRef.current, {
             rotate: 45,
-            top: '110vh',
-            left: '10%',
+            top: '130vh',
+            left: '8%',
             scale: 1.3,
             ease: 'power3.inOut'
           })
@@ -96,7 +96,7 @@ const HeroSec = () => {
             trigger: '#products',
             start: '20% bottom',
             end: 'center center',
-            scrub: true,
+            scrub: 3,
             invalidateOnRefresh: true,
           }
         })
@@ -107,15 +107,15 @@ const HeroSec = () => {
             rotate: -45,
             translateX: '-50%',
             left: '50%',
-            top: '215vh'
+            top: '230vh'
           })
         } else if (isTabletOnly && !isMobileLarge) {
           tl2.to(cookieRef.current, {
-            scale: 0.53,
+            scale: 0.43,
             rotate: -45,
             translateX: '-50%',
-            left: '52%',
-            top: '216vh'
+            left: '50%',
+            top: '238vh'
           })
         }
 
@@ -129,7 +129,7 @@ const HeroSec = () => {
 
   return (
     <main>
-      <div className='h-[81vh] relative pb-10 flex justify-center items-center pt-24 px-4'>
+      <div className='h-[100vh] relative pb-10 flex justify-center items-center pt-24 px-4'>
         <h1 ref={headingRef} className='text-[clamp(3.5rem,19vw,11rem)] text-center z-10 tracking-[clamp(6px,3vw,50px)] font-extrabold leading-none'>
           Cookies
         </h1>

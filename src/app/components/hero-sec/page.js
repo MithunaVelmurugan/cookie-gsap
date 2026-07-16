@@ -43,9 +43,10 @@ const HeroSec = () => {
         isMobile: '(max-width: 639px)',
         isMobileLarge: '(min-width: 640px) and (max-width: 767px)',
         isTabletOnly: '(min-width: 768px) and (max-width: 1023px)',
+        isDesktop: '(min-width: 1024px)',
       },
       (context) => {
-        const { isMobile, isTabletOnly, isMobileLarge } = context.conditions
+        const { isMobile, isTabletOnly, isMobileLarge, isDesktop } = context.conditions
 
         const tl1 = gsap.timeline({
           scrollTrigger: {
@@ -75,7 +76,7 @@ const HeroSec = () => {
             ease: 'power3.inOut'
           })
         }
-        else {
+        else if (isDesktop) {
           tl1.to(cookieRef.current, {
             rotate: 45,
             top: '110vh',
@@ -100,7 +101,7 @@ const HeroSec = () => {
           }
         })
 
-        if (!isMobile && !isTabletOnly && !isMobileLarge) {
+        if (isDesktop) {
           tl2.to(cookieRef.current, {
             scale: 0.73,
             rotate: -45,
@@ -117,6 +118,7 @@ const HeroSec = () => {
             top: '230vh'
           })
         }
+
         return () => {
           tl1.kill()
           tl2.kill()

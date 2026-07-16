@@ -107,7 +107,7 @@ const HeroSec = () => {
             rotate: -45,
             translateX: '-50%',
             left: '50%',
-            top: '250vh'
+            top: '215vh'
           })
         } else if (isTabletOnly && !isMobileLarge) {
           tl2.to(cookieRef.current, {
@@ -115,7 +115,7 @@ const HeroSec = () => {
             rotate: -45,
             translateX: '-50%',
             left: '52%',
-            top: '230vh'
+            top: '216vh'
           })
         }
 
